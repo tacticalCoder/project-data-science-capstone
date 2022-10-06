@@ -1,0 +1,69 @@
+Coursera Data Science Specialization Capstone Project
+========================================================
+author: Kevin Jones
+date: 2022-10-04
+
+
+The Project
+========================================================
+
+This project uses Natural Language Processing (NLP).  
+
+The critical task is to take a user's input phrase and output a predicted next word(s).  
+
+This presentation features the NLP Next Word Predict application including an instruction tab to 
+
+the application user interface and details about the text prediction algorithm.
+
+*Project deliverables:*  
+
+- NLP (Next Word) Prediction Model, is basis for this application.
+- NLP Prediction App hosted at shinyapps.io
+- This presentation hosted at R pubs
+
+NLP Next Word Prediction Model
+========================================================
+
+The next word prediction model uses the principles of "tidy data" applied to text mining in R. Key model steps: 
+
+1. Input: raw text files for model training
+2. Clean training data; separate into 2 words, 3 words, and 4 words n-grams.
+3. Sort n-grams by frequency, and save them as data repos
+4. N-grams function: uses a "back-off" type prediction model
+  - user supplies an input phrase
+  - model uses the last 3, 2, or 1 word to predict the best 4th, 3rd, or 2nd match in the repos
+5. Output: next word prediction
+
+Benefits: easy to read code; uses "pipes"; fast processing of training data; able to sample up to 25% of original corpus; relatively small output repos
+
+
+NLP Prediction Application for Next Word
+========================================================
+
+The next word prediction application provides an easy-to-use user interface to the next word prediction model.  
+
+*Top Features:*  
+
+1. Text box for user input  
+2. Predicted next word outputs dynamically below user input  
+3. Tabs with plots of most frequent n-grams in the data-set
+4. Side panel with user instructions  
+
+*Overall Benefits:*  
+
+1. Fast response  
+2. Method allows for large training sets leading to improve next-word predictions and user experience 
+
+
+*Demo Application:* 
+
+[NLP Shiny App Link](https://kevinjones.shinyapps.io/capstone-final-project/)  
+
+Documentation and Source Code
+========================================================
+
+Shiny App    
+"https://kevinjones.shinyapps.io/capstone-final-project/"
+
+Data Specialization Capstone Project repository on Github    
+"https://github.com/tacticalCoder/project-data-science-capstone"
